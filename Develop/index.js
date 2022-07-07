@@ -39,7 +39,7 @@ const questions = [
       type: 'list',
       name: 'license',
       message: 'Select a license for your project',
-      choices: ['Apache license 2.0, Artistic license 2.0, Boost Software License 1.0']
+      choices: ['Apache license 2.0, MIT, Mozilla']
     },
     {
       type: 'input',
@@ -53,13 +53,12 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions) 
+  inquirer.prompt(questions)
+  .then(writeToFile(data))
+  .catch((error) => console.log(error))
 }
+// This is a function to write a readme file, and to initialize the app
 
 // Function call to initialize app
 init();
