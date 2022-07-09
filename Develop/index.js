@@ -58,12 +58,13 @@ const questions = [
 function init() {
   inquirer
   .prompt(questions)
-  .then(generateMarkdown => {
-    return writeFile(generateMarkdown);
+  .then(data => {
+    console.log(typeof generateMarkdown(data))
+    return writeFile(generateMarkdown(data));
   })
-  .then(generateReadme => {
-    console.log(generateReadme);
-  })
+  // .then(generateReadme => {
+  //   console.log(generateReadme);
+  // })
   .catch(err => {
     console.log(err);
   });

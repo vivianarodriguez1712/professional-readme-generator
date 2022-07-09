@@ -38,8 +38,8 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Description
+ ${data.description}
 
-  ${data.description}
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -61,8 +61,8 @@ function generateMarkdown(data) {
 
  ## Questions
 
-[Github Profile](https://github.com/${answers.githubprofile})
-Email : ${answers.email}
+[Github Profile](https://github.com/${data.githubprofile})
+Email : ${data.email}
 
 `
 }
