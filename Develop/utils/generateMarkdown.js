@@ -61,7 +61,10 @@ function generateMarkdown(data) {
 
  ## Questions
 
-`;
+[Github Profile](https://github.com/${answers.githubprofile})
+Email : ${answers.email}
+
+`
 }
 
 module.exports = generateMarkdown;
