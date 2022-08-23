@@ -1,8 +1,7 @@
-# undefined
-  
+# Professional readme generator  
 
-  ## Description
- its suppose to generate a professional readme
+# User Story
+ ## AS A developer I WANT a README generator SO THAT I can quickly create a professional README for a new project
 
   ## Table of Contents
   - [Installation](#installation)
@@ -12,19 +11,19 @@
   - [Questions](#questions)
 
   ## Installation
-  download node
+  install inquirer
 
   ## Usage
-  type node index.js to run it
+  install
 
   #Contribution
-  no
+  viviana
 
  #Test
- no intrsuctions
+ ghit
 
  ## Questions
 
 [Github Profile](https://github.com/undefined)
-Email : vivianaprodriguez@live.com
+Email : 
 
